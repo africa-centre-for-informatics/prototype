@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>BoardEngage | Dashboard</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+          <li class="nav-header">
+            <div class="dropdown profile-element">
+              <span>
+                <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+              </span>
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                <span class="clear">
+                  <span class="block m-t-xs">
+                    <strong class="font-bold">Victor Mutai</strong>
+                  </span>
+                  <span class="text-muted text-xs block">Dev Ops
+                    <b class="caret"></b>
+                  </span>
+                </span>
+              </a>
+              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                <li>
+                  <a href="#">Profile</a>
+                </li>
+                <li>
+                  <a href="#">Contacts</a>
+                </li>
+                <li>
+                  <a href="#">Mailbox</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Logout</a>
+                </li>
+              </ul>
+            </div>
+            <div class="logo-element">
+              BE+
+            </div>
+          </li>
+          <li class="active">
+            <a href="index.html">
+              <i class="fa fa-th-large"></i>
+              <span class="nav-label">Meetings</span>
+              <span class="fa arrow"></span>
+            </a>
+            <ul class="nav nav-second-level">
+              <li class="active">
+                <a href="index.html">Calendar</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-sitemap"></i>
+              <span class="nav-label">Directory</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+              <span class="nav-label">Mailbox </span>
+              <span class="label label-warning pull-right">16/24</span>
+            </a>
+            <ul class="nav nav-second-level collapse">
+              <li>
+                <a href="#">Inbox</a>
+              </li>
+              <li>
+                <a href="#">Outbox</a>
+              </li>
+              <li>
+                <a href="#">Compose email</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-edit"></i>
+              <span class="nav-label">Actions</span>
+              <span class="fa arrow"></span>
+            </a>
+            <ul class="nav nav-second-level collapse">
+              <li>
+                <a href="#">Tasks</a>
+              </li>
+              <li>
+                <a href="#">Forums</a>
+              </li>
+              <li>
+                <a href="#">Polls</a>
+              </li>
+              <li>
+                <a href="#">Approvals</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-picture-o"></i>
+              <span class="nav-label">Repository</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-desktop"></i>
+              <span class="nav-label">Monitoring</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pie-chart"></i>
+              <span class="nav-label">Evaluation</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-flask"></i>
+              <span class="nav-label">News & Events</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+      <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+          <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+              <i class="fa fa-bars"></i>
+            </a>
+            <form role="search" class="navbar-form-custom" action="#">
+              <div class="form-group">
+                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+              </div>
+            </form>
+          </div>
+          <ul class="nav navbar-top-links navbar-right">
+            <li>
+              <span class="m-r-sm text-muted welcome-message">Welcome to BoardEngage.</span>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                <i class="fa fa-envelope"></i>
+                <span class="label label-warning">16</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                <i class="fa fa-bell"></i>
+                <span class="label label-primary">8</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-sign-out"></i> Log out
+              </a>
+            </li>
+            <li>
+              <a class="right-sidebar-toggle">
+                <i class="fa fa-tasks"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id="small-chat">
+      <span class="badge badge-warning pull-right">5</span>
+      <a class="open-small-chat">
+        <i class="fa fa-comments"></i>
+      </a>
+    </div>
+
+    <div id="right-sidebar" class="animated">
+      <div class="sidebar-container">
+        <ul class="nav nav-tabs navs-3">
+          <li class="active">
+            <a data-toggle="tab" href="#tab-1">
+              Notes
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#tab-2">
+              Projects
+            </a>
+          </li>
+          <li class="">
+            <a data-toggle="tab" href="#tab-3">
+              <i class="fa fa-gear"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mainly scripts -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Custom and plugin javascript -->
+  <script src="js/inspinia.js"></script>
+
+  <!-- jQuery UI -->
+  <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+</body>
+
+</html>
