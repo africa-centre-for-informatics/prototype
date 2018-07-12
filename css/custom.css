@@ -1,7 +1,3 @@
-.info-element {
-  border-left: 3px solid #1c84c6;
-}
-
 .meeting-list {
   list-style: none;
   font-family: 'Lato', sans-serif;
@@ -19,100 +15,73 @@
   background-color: #f5f5f5;
 }
 
-.meeting-list > li > time {
-  display: inline-block;
-  width: 100%;
-  padding: 5px;
+.time {
   text-align: center;
   text-transform: uppercase;
+  width: 120px;
+  float: left;
+  padding: 11px;
+  margin: 0px;
 }
 
-.meeting-list > li > time > .date {
+.date {
   display: block;
   font-size: 40pt;
   font-weight: 100;
   line-height: 1;
 }
-.meeting-list > li time > .day {
+
+.day {
   display: block;
   font-size: 21pt;
   font-weight: 900;
   line-height: 1;
 }
-.meeting-list > li > img {
-  width: 100%;
+
+.info-element {
+  border-left: 3px solid #1c84c6;
+  height: 120px;
 }
-.meeting-list > li > .info {
+
+.info {
   padding-top: 5px;
-  text-align: center;
+  overflow: hidden;
 }
-.meeting-list > li > .info > .title {
+
+.rsvp {
+  overflow: hidden;
+  padding: 0px 35px 10px 35px;
+}
+
+.info > .title {
   font-size: 17pt;
   font-weight: 700;
   margin: 0px;
 }
-.meeting-list > li > .info > .desc,
-.meeting-list > li > .info > .duration {
+
+.info > .desc,
+.info > .duration {
   font-size: 13pt;
   font-weight: 300;
   margin: 0px;
 }
 
-.duration {
+.info > .duration {
   font-size: 12px!important;
 }
 
-.collapse-meeting {
-  position: relative;
-  float: left;
-  text-align: right;
+.info > .title, 
+.info > .desc,
+.info > .duration {
+  padding: 4px 18px;
 }
-
-
-@media (min-width: 768px) {
-  .meeting-list > li {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 120px;
-    padding: 0px;
-  }
-
-  .meeting-list > li > time {
-    display: inline-block;
-  }
-
-  .meeting-list > li > time {
-    width: 120px;
-    float: left;
-  }
-
-  .meeting-list > li > .info {
-    overflow: hidden;
-  }
-
-  .meeting-list > li > time {
-    width: 120px;
-    height: 120px;
-    padding: 11px;
-    margin: 0px;
-  }
-
-  .meeting-list > li > .info {
-    position: relative;
-    height: 120px;
-    text-align: left;
-    padding-right: 40px;
-  }	
-
-  .meeting-list > li > .info > .title, 
-  .meeting-list > li > .info > .desc,
-  .meeting-list > li > .info > .duration {
-    padding: 4px 18px;
-  }
-}
-
 
 .be-logo {
   width: 100%;
+}
+
+.navbar-static-side {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
 }
