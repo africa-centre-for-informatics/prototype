@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-.navbar-static-side {
+.sidebar-fixed {
   height: 100%!important;
   position: fixed!important;
   z-index: 1!important;
