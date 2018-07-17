@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>BoardEngage | Dashboard</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="mini-navbar">
+  <div id="wrapper">
+    <nav class="navbar-default navbar-static-side sidebar-fixed" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+          <li class="nav-header">
+            <div class="dropdown profile-element navbar-minimalize">
+              <span>
+                <img alt="image" class="be-logo" src="img/be-logo.png" />
+              </span>
+            </div>
+            <div class="logo-element navbar-minimalize">
+              <i class="fa fa-bars"></i>
+            </div>
+          </li>
+          <li>
+            <a href="dashboard.html">
+              <i class="fa fa-home"></i>
+              <span class="nav-label">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="meeting.html">
+              <i class="fa fa-th-large"></i>
+              <span class="nav-label">Meetings</span>
+              <span class="fa arrow"></span>
+            </a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="meeting.html">Meeting Dates</a>
+              </li>
+              <li>
+                <a href="meeting.html">Calendar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href="directory.html">
+              <i class="fa fa-sitemap"></i>
+              <span class="nav-label">Directory</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-envelope"></i>
+              <span class="nav-label">Communication </span>
+            </a>
+            <ul class="nav nav-second-level collapse">
+              <li>
+                <a href="inbox.html">Mailbox </a>
+              </li>
+              <li>
+                <a href="#">Chat</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-edit"></i>
+              <span class="nav-label">Actions</span>
+              <span class="fa arrow"></span>
+            </a>
+            <ul class="nav nav-second-level collapse">
+              <li>
+                <a href="#">Tasks</a>
+              </li>
+              <li>
+                <a href="#">Forums</a>
+              </li>
+              <li>
+                <a href="#">Polls</a>
+              </li>
+              <li>
+                <a href="#">Approvals</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="repository.html">
+              <i class="fa fa-picture-o"></i>
+              <span class="nav-label">Repository</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-desktop"></i>
+              <span class="nav-label">Compliance</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-flask"></i>
+              <span class="nav-label">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pie-chart"></i>
+              <span class="nav-label">Evaluation</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+      <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+          <div class="navbar-header">
+            <form role="search" class="navbar-form-custom" action="#">
+              <div class="form-group">
+                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+              </div>
+            </form>
+          </div>
+          <ul class="nav navbar-top-links navbar-right">
+            <li>
+              <span class="m-r-sm text-muted welcome-message">Welcome to BoardEngage.</span>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                <i class="fa fa-envelope"></i>
+                <span class="label label-warning">2</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                <i class="fa fa-bell"></i>
+                <span class="label label-primary">8</span>
+              </a>
+            </li>
+            <li>
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                Victor Mutai
+              </a>
+              <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                <li>
+                  <a href="#">Profile</a>
+                </li>
+                <li>
+                  <a href="#">Contacts</a>
+                </li>
+                <li>
+                  <a href="#">Mailbox</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-sign-out"></i> Logout</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="right-sidebar-toggle">
+                <i class="fa fa-tasks"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Start here -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper wrapper-content animated fadeInUp">
+
+            <div class="ibox">
+              <div class="ibox-title">
+                <h5>Directory</h5>
+                <div class="ibox-tools">
+                  <a href="" class="btn btn-primary btn-xs">some button</a>
+                </div>
+              </div>
+              <div class="ibox-content">
+                <div class="project-list">
+
+                  <ul class="meeting-list">
+
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Victor Mutai</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> Chairperson ACIM</p>
+                          <p class="duration">
+                            <i class="fa fa-mobile"></i> 072092102
+                            <i class="fa fa-envelope-o"></i> victor@mutai.com
+                          </p>
+                        </div>
+                        <div class="profile-status pull-right">
+                          <ul>
+                            <li>
+                              <span class="dot"></span> online
+                            </li>
+                            <li>
+                              <i class="fa fa-envelope-o"></i> email
+                            </li>
+                            <li>
+                              <i class="fa fa-comment"></i> chat
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">BoardEngage Prototype Testing</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> Privatisation Commission</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Stakeholders Meeting</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> ACIM Boardroom 2</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Staff Meeting</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> ACIM Boardroom 1</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Directors Meeting</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> Intercontinental Hotel</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Church Visit</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> CITAM Karen</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Committee Meeting</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> Privatisation Commission</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Directors Meeting</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> Privatisation Commission</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">SCI-ISIG Business Meeting</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> The Hub</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 09:30 AM - 10:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">BoardEngage Prototype Testing</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> Privatisation Commission</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">ACRM Board of Governors Meeting</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> ACIM Boardroom 1</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">BoardEngage Prototype Testing</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> Privatisation Commission</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 10:30 AM - 11:00 AM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="meeting double-border">
+                        <div class="profile-pic">
+                          <img alt="Independence Day" class="img-responsive" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg"
+                          />
+                        </div>
+                        <div class="info">
+                          <h2 class="title">Executive Directors Meeting</h2>
+                          <p class="desc">
+                            <i class="fa fa-map-marker"></i> ACIM Boardroom 2</p>
+                          <p class="duration">
+                            <i class="fa fa-clock-o"></i> 3:30 PM - 5:00 PM</p>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="pull-right">
+          BOARDENGAGE BY ACIM DEVELOPERS 2018
+        </div>
+      </div>
+    </div>
+
+    <div id="right-sidebar" class="animated">
+      <div class="sidebar-container">
+        <ul class="nav nav-tabs navs-3">
+          <li class="active">
+            <a data-toggle="tab" href="#tab-1">
+              Notes
+            </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#tab-2">
+              Projects
+            </a>
+          </li>
+          <li class="">
+            <a data-toggle="tab" href="#tab-3">
+              <i class="fa fa-gear"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mainly scripts -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+  <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Custom and plugin javascript -->
+  <script src="js/inspinia.js"></script>
+
+  <!-- jQuery UI -->
+  <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+</body>
+
+</html>

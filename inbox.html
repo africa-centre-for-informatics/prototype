@@ -17,20 +17,26 @@
 
 </head>
 
-<body>
+<body class="mini-navbar">
   <div id="wrapper">
     <nav class="navbar-default navbar-static-side sidebar-fixed" role="navigation">
       <div class="sidebar-collapse">
         <ul class="nav metismenu" id="side-menu">
           <li class="nav-header">
-            <div class="dropdown profile-element">
+            <div class="dropdown profile-element navbar-minimalize">
               <span>
                 <img alt="image" class="be-logo" src="img/be-logo.png" />
               </span>
             </div>
-            <div class="logo-element">
-              BE+
+            <div class="logo-element navbar-minimalize">
+              <i class="fa fa-bars"></i>
             </div>
+          </li>
+          <li>
+            <a href="dashboard.html">
+              <i class="fa fa-home"></i>
+              <span class="nav-label">Dashboard</span>
+            </a>
           </li>
           <li>
             <a href="meeting.html">
@@ -48,7 +54,7 @@
             </ul>
           </li>
           <li>
-            <a href="#">
+            <a href="directory.html">
               <i class="fa fa-sitemap"></i>
               <span class="nav-label">Directory</span>
             </a>
@@ -56,18 +62,14 @@
           <li class="active">
             <a href="#">
               <i class="fa fa-envelope"></i>
-              <span class="nav-label">Mailbox </span>
-              <span class="label label-warning pull-right">2/14</span>
+              <span class="nav-label">Communication </span>
             </a>
             <ul class="nav nav-second-level collapse">
               <li class="active">
-                <a href="inbox.html">Inbox</a>
+                <a href="inbox.html">Mailbox </a>
               </li>
               <li>
-                <a href="inbox.html">Outbox</a>
-              </li>
-              <li>
-                <a href="composemail.html">Compose email</a>
+                <a href="inbox.html">Chat</a>
               </li>
             </ul>
           </li>
@@ -124,9 +126,6 @@
       <div class="row border-bottom">
         <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
           <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
-              <i class="fa fa-bars"></i>
-            </a>
             <form role="search" class="navbar-form-custom" action="#">
               <div class="form-group">
                 <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">

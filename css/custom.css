@@ -85,3 +85,54 @@
   position: fixed!important;
   z-index: 1!important;
 }
+
+.double-border {
+  border-left: 3px solid #1c84c6;
+  border-right: 3px solid #1c84c6;
+  height: 120px;
+}
+
+.profile-pic {
+  height: inherit;
+  float: left;
+  padding-left: 2px;
+}
+
+.profile-pic > img {
+  height: inherit;
+}
+
+.profile-status {
+  position: relative;
+  bottom: 85px;
+  margin-right: 40px;
+}
+
+.profile-status > ul > li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.profile-status > ul > li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.profile-status > ul > li > i {
+  color: #1c84c6;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #54fc12;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pad-td {
+  padding: 17px!important;
+}
+
+.mission-title {
+  margin-bottom: 50px;
+}
